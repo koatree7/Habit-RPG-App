@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Life RPG</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0f0f10" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+
+  <h1>🎮 Life RPG</h1>
+
+  <div id="aura"></div>
+
+  <!-- DAILY TASKS -->
+  <div class="card">
+    <h2>🎯 Daily Focus</h2>
+    <div id="dailyFocus"></div>
+  </div>
+
+  <!-- SESSION -->
+  <div class="card">
+    <h2>⏱️ Session</h2>
+    <div id="timer">0:00</div>
+    <button class="primary" onclick="startSession()">Start</button>
+    <button onclick="endSession()">End</button>
+  </div>
+
+  <!-- EXPLORATION -->
+  <div class="card">
+    <h2>🗺️ Exploration</h2>
+    <button onclick="logExplore()">Log Exploration</button>
+  </div>
+
+  <!-- STATS -->
+  <div class="card">
+    <h2>📊 Stats</h2>
+    <p id="stats"></p>
+  </div>
+
+  <!-- INSIGHT MODE -->
+  <button onclick="toggleInsight()">⚙️ Insight</button>
+
+  <div id="insight" style="display:none;">
+    <div class="card">
+      <h2>📈 Progress</h2>
+
+      <button onclick="toggleRange()">View: Weekly</button>
+      <button onclick="toggleGraph()">Showing: XP</button>
+
+      <canvas id="weeklyChart" width="300" height="150"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

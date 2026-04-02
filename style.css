@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: -apple-system, sans-serif;
+  background: #0f0f10;
+  color: white;
+  padding: 12px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  background: #1c1c1e;
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 5px 0;
+  background: #2c2c2e;
+  color: white;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.primary {
+  background: gold;
+  color: black;
+}
+
+.quest {
+  position: relative;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 4px 0;
+  background: #2c2c2e;
+}
+
+.progress-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  background: lime;
+}
+
+#aura {
+  height: 8px;
+  border-radius: 999px;
+  margin: 10px 0;
+  background: linear-gradient(90deg, gold, orange);
+}
